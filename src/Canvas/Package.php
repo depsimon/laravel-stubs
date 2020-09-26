@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs\Canvas;
+namespace Depsimon\Stubs\Canvas;
 
 class Package extends \Orchestra\Canvas\Core\Presets\Package
 {

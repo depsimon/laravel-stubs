@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs;
+namespace Depsimon\Stubs;
 
 use Illuminate\Console\Command;
 use Illuminate\Console\ConfirmableTrait;
@@ -10,7 +10,7 @@ use Symfony\Component\Finder\SplFileInfo;
 
 class StubsPublishCommand extends Command
 {
-    protected $signature = 'spatie-stub:publish {--force : Overwrite any existing files}';
+    protected $signature = 'depsimon-stub:publish {--force : Overwrite any existing files}';
 
     protected $description = 'Publish all opinionated stubs that are available for customization';
 
@@ -21,7 +21,7 @@ class StubsPublishCommand extends Command
         if (! $this->confirmToProceed()) {
             return 1;
         }
-        
+
         if (! is_dir($stubsPath = $this->laravel->basePath('stubs'))) {
             (new Filesystem)->makeDirectory($stubsPath);
         }

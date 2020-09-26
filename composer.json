@@ -1,17 +1,18 @@
 {
-    "name": "spatie/laravel-stubs",
+    "name": "depsimon/laravel-stubs",
     "description": "Opinionated Laravel stubs",
     "keywords": [
-        "spatie",
+        "depsimon",
+        "gitscape",
         "laravel-stubs"
     ],
-    "homepage": "https://github.com/spatie/laravel-stubs",
+    "homepage": "https://github.com/depsimon/laravel-stubs",
     "license": "MIT",
     "authors": [
         {
-            "name": "Freek Van der Herten",
-            "email": "freek@spatie.be",
-            "homepage": "https://spatie.be",
+            "name": "Simon Depelchin",
+            "email": "simon@gitscape.com",
+            "homepage": "https://gitscape.com",
             "role": "Developer"
         }
     ],
@@ -25,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Spatie\\Stubs\\": "src"
+            "Depsimon\\Stubs\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Spatie\\Stubs\\Tests\\": "tests"
+            "Depsimon\\Stubs\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -44,7 +45,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Spatie\\Stubs\\StubsServiceProvider"
+                "Depsimon\\Stubs\\StubsServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Spatie\Stubs;
+namespace Depsimon\Stubs;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,10 +1,10 @@
 <?php
 
-namespace Spatie\Stubs\Tests;
+namespace Depsimon\Stubs\Tests;
 
 use Illuminate\Support\Facades\File;
 
-class StubPublishCommandTest extends TestCase
+class StubsPublishCommandTest extends TestCase
 {
     /** @test */
     public function it_can_publish_stubs()
@@ -13,7 +13,7 @@ class StubPublishCommandTest extends TestCase
 
         File::deleteDirectory($targetStubsPath);
 
-        $this->artisan('spatie-stub:publish')->assertExitCode(0);
+        $this->artisan('depsimon-stubs:publish')->assertExitCode(0);
 
         $stubPath = __DIR__ . '/../stubs/migration.stub';
 

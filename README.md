@@ -1,8 +1,8 @@
 # Opinionated Laravel stubs
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/spatie/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-stubs)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/spatie/laravel-stubs/run-tests?label=tests)](https://github.com/spatie/laravel-stubs/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Total Downloads](https://img.shields.io/packagist/dt/spatie/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/spatie/laravel-stubs)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/depsimon/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/depsimon/laravel-stubs)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/depsimon/laravel-stubs/run-tests?label=tests)](https://github.com/depsimon/laravel-stubs/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Total Downloads](https://img.shields.io/packagist/dt/depsimon/laravel-stubs.svg?style=flat-square)](https://packagist.org/packages/depsimon/laravel-stubs)
 
 This repo contains opinionated versions of the Laravel stubs. The most notable changes are:
 
@@ -12,22 +12,12 @@ This repo contains opinionated versions of the Laravel stubs. The most notable c
 - use return type hints where possible
 - most docblocks have been removed
 
-## Support us
-
-Learn how to create a package like this one, by watching our premium video course:
-
-[![Laravel Package training](https://spatie.be/github/package-training.jpg)](https://laravelpackage.training)
-
-We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
-
-We highly appreciate you sending us a postcard from your hometown, mentioning which of our package(s) you are using. You'll find our address on [our contact page](https://spatie.be/about-us). We publish all received postcards on [our virtual postcard wall](https://spatie.be/open-source/postcards).
-
 ## Installation
 
 You can install the package via composer:
 
 ```bash
-composer require spatie/laravel-stubs --dev
+composer require depsimon/laravel-stubs --dev
 ```
 
 If you want to keep your stubs up to date with every update, add this composer hook to your composer.json file:
@@ -35,7 +25,7 @@ If you want to keep your stubs up to date with every update, add this composer h
 ```json
 "scripts": {
     "post-update-cmd": [
-        "@php artisan spatie-stub:publish"
+        "@php artisan depsimon-stubs:publish"
     ]
 }
 ```
@@ -45,7 +35,7 @@ If you want to keep your stubs up to date with every update, add this composer h
 You can publish the stubs using this command:
 
 ```bash
-php artisan spatie-stub:publish
+php artisan depsimon-stubs:publish
 ```
 
 ## Testing
@@ -64,10 +54,11 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## Security
 
-If you discover any security related issues, please email freek@spatie.be instead of using the issue tracker.
+If you discover any security related issues, please email simon@gitscape.com instead of using the issue tracker.
 
 ## Credits
 
+- [Simon Depelchin](https://github.com/depsimon)
 - [Freek Van der Herten](https://github.com/freekmurze)
 - [All Contributors](../../contributors)
 
